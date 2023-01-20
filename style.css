@@ -1,0 +1,141 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: lightgray;
+    font-family: 'Sofia Sans', sans-serif;
+
+}
+
+p{
+    font-weight: 0.8rem;
+}
+
+.left-description, .card-content{
+    margin: 20px;
+}
+
+.container{
+    display: flex;
+    /* yha par humlog gap islye diye kuki humlog chate ha ke humlog ka dono left and right part apass me chipke nhi*/
+    gap: 20px;
+    width: 70%;
+    margin-inline: auto;
+}
+
+.left-column{
+    width: 30%;
+}
+
+.right-column{
+    /* humlog ka jo example ha usme humlog ko right side ka jo col ha usme two section tha and wo dono apas me chipke nhi the to agar humlog right side wala ko flex nhi kar ta to humlog dono section apass me chipke rahe te to ya problem ko solve kar na ka liye humlog right side ko flex me convert kar diye and iska direction humlog col wise kar diye and dono ka biche me gap dal diye */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    
+}
+
+.img-box{
+    position: relative;
+}
+.img-box img{
+    width: 100%;
+}
+/* and humlog chate ha ke mera jo h2 ha wo mera img ka upper a jaye to uske liye humlog position absolute set kar denge kuki related position se bhar ho jaye ga */
+.img-box .user-name{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: red;
+    font-weight: bolder;
+}
+
+.contact-info ul{
+  list-style: none;
+  /* margin-block ka mtlub ho ta ha ke humlog ko top and bottom se margin dena ha uske liye use ho ta ha and margin-inline ka mtlub ho ta ha ke left and right me margin dena ha */
+  margin-block: 20px;
+}
+
+/* humlog ka jo logo ha wo sub ko humlog flex kar dege kuki humlog chate ha ke humlog ka log and jo uske niche likha whoa ha wo ek line a jaye */
+.icon-text{
+    display: flex;
+    gap: 15px;
+}
+i{
+    color: teal;
+}
+
+.progress-bar{
+
+    background-color: #ccc;
+    border-radius: 20px;
+    margin-block: 8px;
+}
+
+.progress-bar .progress{
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.5rem;
+    padding-block: 2px;
+}
+.skills{
+    margin-top: 20px;
+    
+}
+.languages{
+    margin-top: 20px; 
+}
+.hr-line{
+    border-color: red;
+    
+}
+.hr-line2{
+    border-color: red;
+    margin-top: 10px;
+}
+
+.card{
+
+    background-color: white;
+    box-shadow: 4px 4px 4px white;
+    
+}
+
+.heading-detail{
+    font-weight: bolder;
+    color: salmon;
+    padding-bottom: 10px;
+    margin-top: 12px;
+}
+
+.badge{
+
+    background-color: aquamarine;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.left-text{
+    color: brown;
+}
+
+#study{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#work{
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
